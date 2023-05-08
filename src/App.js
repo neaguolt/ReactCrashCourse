@@ -1,8 +1,16 @@
+import { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [change, setChange] = useState(true);
   return (
-    <h1 className='App'>Welcome to my app</h1>
+    <div>
+      <button onClick={() => setChange(!change)}>
+        Click Here!
+      </button>
+      {change ? <h1>Whelcome to my App</h1>: 
+        <h1>Computer Science Portal</h1>}
+    </div>
   );
 }
 
