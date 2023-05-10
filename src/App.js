@@ -1,8 +1,8 @@
 import './App.css';
-import Comment from './CrashCourse/Comment';
+import Example from './Example/Example';
 
 const App = () => {
-  return <Comment />
+  return <Example />
 }
 
 export default App;
