@@ -1,17 +1,8 @@
-import { useEffect } from 'react';
 import './App.css';
-import SayHello from './CrashCourse/SayHello';
+import Comment from './CrashCourse/Comment';
 
 const App = () => {
-  useEffect(() => {
-    console.log("Mounting...");
-  });
-  return (
-    <>
-      <h1>Geeks .....!</h1>
-      <SayHello/>
-    </> 
-  );
+  return <Comment />
 }
 
 export default App;
