@@ -1,17 +1,13 @@
 import './App.css';
-import { useState } from 'react';
+import ButonCSH from './Example/ButonCSH';
+import DivScrollable from './Example/DivScrollable';
+
 const App = () => {
-  const [message, setMessage] = useState("");
-
-  const handleClick = () => {
-    setMessage("Button clicked!");
-  }
-
   return (
-    <div onClick={handleClick}>
-      <h1>Click anywhere in the body to trigger the event</h1>
-      <p>{message}</p>
-    </div>
+    <>
+      <ButonCSH name="Click Me"/>
+      <DivScrollable numElements= {5}  text= "This is some content that is long" />
+    </>
   );
 }
 
