@@ -1,14 +1,10 @@
-import './App.css';
-import ButonCSH from './Example/ButonCSH';
-import DivScrollable from './Example/DivScrollable';
+//import './App.css';
+
+import ListElements from './Example/ListElements';
 
 const App = () => {
   return (
-    <>
-      <ButonCSH name="Click Me"/>
-      <DivScrollable numElements= {5}  text= "This is some content that is long" />
-    </>
+    <ListElements numbers= {[1,2,3]} />
   );
 }
-
 export default App;
