@@ -1,21 +1,21 @@
+import ListItem from "./Example/Listitem";
+
 //import './App.css';
-
-import Post from "./Example/Post";
-
-const posts = [
-  { id: 1, title: 'Hello World', content: 'Welcome to learning React!' },
-  { id: 2, title: 'Installation', content: 'You can install React from npm.' }
-];
-const content= posts.map((post) => 
-  <Post key={post.id}
-        id={post.id}    
-        title={post.title}>
-  </Post>
-);
-const App = () => {
-  
+function NumbersList (props){
+  const numbers = props.numbers;
   return (
-    <div>{content}</div> 
+    <ul>
+      {numbers.map((number) =>
+        <ListItem key={number.toString()} value={number.toString()} />
+      )}
+    </ul>
+  )
+}
+
+const App = () => {
+
+  return (
+    <NumbersList numbers= {[1,2,3,5]}/>
   )
 }
 export default App;
