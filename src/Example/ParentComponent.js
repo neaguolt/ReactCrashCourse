@@ -1,11 +1,11 @@
 import ChildComponent from "./ChildComponent"
 import { useState } from "react";
 
-export default ParentComponent() {
+export default function ParentComponent() {
     const [message,setMessage]= useState("Hello from Parent default!");
 
     function updateMessage(newMessage) {
-        setMessage(newmessage);
+        setMessage(newMessage);
     }
     return (
         <div>

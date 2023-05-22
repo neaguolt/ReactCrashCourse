@@ -1,18 +1,11 @@
-import MyButton from "./Example/MyButton";
-import { useState } from "react";
+
+import ParentComponent from "./Example/ParentComponent";
 
 const App = () => {
-  const [count, setCont]= useState(0);
-
-  function handleClick() {
-      setCont(count +1);
-      console.log("handleClick")
-  }
-
+  
   return (
     <>
-    <MyButton count={count} onClick={handleClick} />
-    <MyButton count={count} onClick={handleClick} />
+      <ParentComponent />
     </>
   )
 }
