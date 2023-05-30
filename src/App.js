@@ -1,21 +1,16 @@
 
-import {ThemeProvider} from "./Example/ThemeContext";
-import SiblingA from "./Example/SiblingA"
-import SiblingB from "./Example/SiblingB"
-import SiblingC from "./Example/SiblingC"
-import ThemeButton from "./Example/ThemeButton";
+import { Provider } from 'react-redux';
+import store from './Example/store';
 import './parent.css'
+import CounterComponent from './Example/CounterComponent';
 
 const App = () => {
   
   return (
     <div className="App">
-    <ThemeProvider>
-      <SiblingA />
-      <SiblingB />
-      <SiblingC />
-      <ThemeButton />
-    </ThemeProvider>
+    <Provider store={store}>
+      <CounterComponent />  
+    </Provider>
   </div>
   )
 }
