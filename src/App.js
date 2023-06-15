@@ -1,17 +1,22 @@
-
-import { Provider } from 'react-redux';
-import store from './Example/store';
-import './parent.css'
-import CounterComponent from './Example/CounterComponent';
-
-const App = () => {
-  
+export default function Form({
+  status = 'empty'
+}) {
+  if (status === 'success') {
+    return <h1>That's right!</h1>
+  }
   return (
-    <div className="App">
-    <Provider store={store}>
-      <CounterComponent />  
-    </Provider>
-  </div>
+    <>
+      <h2>City quiz</h2>
+      <p>
+        In which city is there a billboard that turns air into drinkable water?
+      </p>
+      <form>
+        <textarea />
+        <br />
+        <button>
+          Submit
+        </button>
+      </form>
+    </>
   )
 }
-export default App;

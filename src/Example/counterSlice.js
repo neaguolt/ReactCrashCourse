@@ -1,5 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { fetchCounterValue } from './api'; // A fictional API module
+/*import { createSlice } from '@reduxjs/toolkit';
+//import { fetchCounterValue } from './api'; // A fictional API module
 
 const counterSlice = createSlice({
   name: 'counter',
@@ -28,4 +28,4 @@ export const fetchCounter = () => {
       // Handle error
     }
   };
-};
+};*/
